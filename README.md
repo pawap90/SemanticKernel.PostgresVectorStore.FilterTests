@@ -2,9 +2,9 @@ A project for testing filtering capabilities in Semantic Kernel's PostgreSQL vec
 
 ## What it tests
 
-- **Filter_By_Single_Tag**: Single tag filtering using `Contains()` -> Works as expected ✅
-- **Filter_By_Multiple_Tags_As_Literal_String**: Multiple tag filtering with OR conditions ->  Works as expected ✅
-- **Filter_By_Tags_Array_With_Any**: Array-based filtering using `.Any()` with dynamic tag arrays -> Fails ❌ with error "System.NotSupportedException : Unsupported method call: Enumerable.Any"
+- ✅ **Filter_By_Single_Tag**: Single tag filtering using `Contains()` -> Works as expected 
+- ✅ **Filter_By_Multiple_Tags_As_Literal_String**: Multiple tag filtering with OR conditions ->  Works as expected 
+- ❌ **Filter_By_Tags_Array_With_Any**: Array-based filtering using `.Any()` with dynamic tag arrays -> Fails  with error "System.NotSupportedException : Unsupported method call: Enumerable.Any"
 
 Exception:
 
