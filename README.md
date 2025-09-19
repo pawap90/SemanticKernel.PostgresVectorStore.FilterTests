@@ -5,14 +5,13 @@ Setup the PostgreSQL connection string in `appsettings.json`:
 
 ```json
 {
-  "ConnectionStrings": {
-    "Postgres": "Host=localhost;Port=5432;Database=vectorstore;Username=postgres;Password=yourpassword"
+  "PostgresConfig": {
+    "ConnectionString": "Host=localhost;Port=5432;Database=vectorstore;Username=postgres;Password=yourpassword"
   }
 }
 ```
 
 ## Run tests
-
 ```sh
 dotnet test
 ```
