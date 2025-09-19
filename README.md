@@ -1,5 +1,22 @@
 A project for testing filtering capabilities in Semantic Kernel's PostgreSQL vector store, specifically focusing on `.Contains()` and `.Any()` filters for array-based queries over list/array columns.
 
+## Configuration
+Setup the PostgreSQL connection string in `appsettings.json`:
+
+```json
+{
+  "ConnectionStrings": {
+    "Postgres": "Host=localhost;Port=5432;Database=vectorstore;Username=postgres;Password=yourpassword"
+  }
+}
+```
+
+## Run tests
+
+```sh
+dotnet test
+```
+
 ## What it tests
 
 - ✅ **Filter_By_Single_Tag**: Single tag filtering using `Contains()` -> Works as expected 
